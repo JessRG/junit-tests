@@ -36,4 +36,22 @@ public class Student {
     public void addGrade(int grade) {
         grades.add(grade);
     }
+
+    // getGradeAverage method: returns the average of the students grades
+    public double getGradeAverage() {
+        double sum = 0;
+        for(Integer grade : grades) {
+            sum += grade;
+        }
+        return sum / (double)grades.size();
+    }
+
+//    public static void main(String[] args) {
+//        Student student = new Student("sname", 01);
+//        student.addGrade(99);
+//        student.addGrade(80);
+//        student.addGrade(85);
+//        student.addGrade(79);
+//        System.out.println(student.getGradeAverage());
+//    }
 }
