@@ -17,13 +17,23 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
-    // getId method
+    // getId method: returns the student's id
     public long getId() {
         return id;
     }
 
-    // getName method
+    // getName method: returns the student's name
     public String getName() {
         return name;
+    }
+
+    // getGrades method: returns the list of grades
+    public ArrayList<Integer> getGrades() {
+        return grades;
+    }
+
+    // addGrade method: adds the given grade to the list
+    public void addGrade(int grade) {
+        grades.add(grade);
     }
 }

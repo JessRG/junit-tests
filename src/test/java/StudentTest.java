@@ -15,6 +15,12 @@ public class StudentTest {
     public void testStudentConstructor() {
         assertEquals(0, student.getId());
         assertEquals("someName", student.getName());
+        assertTrue(student.getGrades().isEmpty());
     }
 
+    @Test
+    public void testAddGrade() {
+        student.addGrade(99);
+        assertFalse(student.getGrades().isEmpty());
+    }
 }
